@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>J1J Design | TP Final Maquetado Juan Manuel Palma</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="StyleSheet" href="css/normalize.css" type="text/css" />
+        <link rel="StyleSheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/all.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        <main>
+        <header>
+                <h1>J1J Design</h1>
+                <nav id="menu">                
+                        <a id="abrir" href="#">Abrir</a>
+                        <a id="cerrar" href="#">Cerrar</a>
+                        <ul id="barra">                            
+                            <li><a class="botonmenu" href="index.html">Home</a></li>
+                            <li><a class="botonmenu" href="portfolio.html">Porfolio</a></li>
+                            <li><a class="botonmenu" href="academico.html">Academico</a></li>
+                            <li><a class="botonmenu" href="contacto.html">Contacto</a></li>
+                            <li><a class="botonmenu" href="about-me.html">Sobre Mí</a></li>
+                        </ul>                  
+                </nav>
+        </header>
+        <section id="banner-h2">
+            <h2>Contacto</h2>                                 
+        </section>
+        <section id="Contacto">
+            <h3>Te invito a que me contactes para responder a tus consultas.</h3>            
+            <form method="post" action="http://recursos.grodriguez.com.ar/FORM/">
+        <!--<form method="post" action="gracias.html"> // Carga del HTML Gracias-->    
+                <fieldset>
+                    <legend>Completá los datos</legend>
+                    <div>
+                        <label>Nombre y Apellido</label>
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre y apellido..." required /> *
+                    </div>
+                    <div>
+                        <label>E-Mail: </label>
+                        <input type="email" name="email" placeholder="Ingrese su E-Mail (nombre@casilla.com)" required /> *
+                    </div>
+                    <div>
+                        <label>Motivo de su contacto</label>
+                        <input type="text" name="contacto" list="motivoconsulta" />
+                        <datalist id="motivoconsulta">                                
+                                <option>Diseño Web</option>
+                                <option>Diseño Gráfico</option>
+                                <option>Diseño y Renderizado 3D</option>			
+				        </datalist>                        
+                    </div>
+                    <div>
+                        <label for="myfile">Adjunte archivos si desea</label>
+                        <input type="file" id="myfile" name="myfile" multiple><br><br>
+                    </div>   
+                    <div>
+                        <label>Tu Comentario: </label>
+                        <textarea placeholder= "Escriba su comentario..." name="comentario" cols="45" rows="10"></textarea>
+                    </div>        
+                    <div>
+                        <input type="reset" value="Limpiar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            <div id="autor">
+                <p><strong>Palma Juan Manuel</strong> | Maquetado y Desarrollo Web | T. Noche | 1B | 2020 </p>                
+                <p><a href="https://j1jdesign.artstation.com/" target="_blank"><i class="fab fa-artstation"></i></a><a href="http://www.instagram.com/j1jdesign" target="_blank"><i class="fab fa-instagram-square"></i></a><a href="https://www.teepublic.com/user/j1jdesign" target="_blank"><i class="fas fa-store"></i></a></p>
+            </div>
+            <div id="copyright">
+                <p>©2020 J1J Design.  Todos los derechos reservados.</p>
+            </div>    
+        </footer>
+    </main>
+</body>
+</html>

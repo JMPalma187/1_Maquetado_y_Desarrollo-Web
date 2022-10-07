@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Magic! | Bienvenid@!</title>
+    <link rel="StyleSheet" href="normalize.css" type="text/css" />
+    <link rel="StyleSheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+</head>
+
+<body class="cuerpo">
+    <main>
+        <nav id="menu">
+            <ul>
+                <li><a class="botonmenu" href="index.html">Principal</a></li>
+                <li><a class="botonmenu" href="discografia.html">Discografía</a></li>
+                <li><a class="botonmenu" href="informacion.html">Noticias</a></li>
+                <li><a class="botonmenu" href="tour.html">Tour 2018</a></li>
+                <li><a class="botonmenu" href="http://www.facebook.com/ournameismagic" target="_blank">Facebook</a></li>
+                <li><a class="botonmenu" href="http://www.twitter.com/ournameismagic" target="_blank">Twitter</a></li>
+                <li><a class="botonmenu" href="http://www.youtube.com/ournameismagic" target="_blank">YouTube</a></li>
+            </ul>
+        </nav>
+        <header id="home">
+            <h1>MAGIC!</h1>
+        </header>
+        <article id="biografia">
+            <h2>La magia del reggae canadiense</h2>
+            <div class="historia">
+                <div>
+                    <h3>¿Por qué la pegaron?</h3>
+                    <p>MAGIC! es una banda canadiense de reggae-fusión, compuesta por el compositor y productor discográfico Nasri Atweh en la voz principal y Mark Pellizzer, Alex Tanas y Ben Spivak. En 2013, lanzaron su single de debut, «Rude» que alcanzó el número dos en Australia y Nueva Zelanda y el número siete en Canadá. El grupo MAGIC! aparece en el álbum homónimo de Shakira en la canción titulada <cite>Cut me deep</cite>, lanzado en marzo de 2014. Después de sus éxitos sacaron su primer disco llamado <cite>Don't Kill the Magic</cite>. Entre las canciones de este están, además de <cite>Rude</cite>, <cite>No Way No</cite>, <cite>No Evil</cite>, <cite>Don't Kill the Magic</cite>, <cite>Mama Didn't Raise No Fool</cite> y <cite>Let Your Hair Down</cite>. La banda firmó con Sony Music Entertainment y también se ha asociado con Latium Entertainment y en el 2015 sacaron un single de la canción homónima «Lay You Down Easy», que después sería añadida en su álbum del 2016 <cite>Primary Colours</cite>.</p>
+                </div>
+                <div>
+                    <h3>¿Tan cracks son?</h3>
+                    <p>Sí. En un mundo artístico y musical donde <i>casi todo está inventado</i>, bandas como <strong>Magic!</strong> dan aires nuevos a géneros clásicos como el <em>reggae</em>, fusionandolos con géneros como el pop, fusión y dance, dando como resultado sonidos nuevos y originales. Pegale una escuchada que vale la pena. Te lo recomienda un escuchante de rock, blues, metal, jazz y otros géneros (salvo latino, cumbia, reggaton).</p>
+                </div>
+            </div>
+        </article>
+        <section id="suscripcion">
+            <h2>Suscripción</h2>
+            <h3>Te invitamos a suscribirte a nuestro Newsletter para estar al día con la banda.</h3>
+            <form method="post" action="http://recursos.grodriguez.com.ar/FORM/">
+                <fieldset>
+                    <legend>Datos de Suscripción</legend>
+                    <div class="formestilo">
+                       <span>Datos Personales</span>
+                       <br />
+                        <input type="text" name="nombre" placeholder="Nombre y Apellido" required /> *
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="E-Mail (nombre@casilla.com)" required /> *
+                    </div>
+                    <hr />
+                    <div class="small">
+                        <span>Género</span>
+                        <input type="radio" id="sexofemenino" value="femenino" name="sexo" />
+                        <label> Femenino</label>
+
+                        <input type="radio" id="sexomasculino" value="masculino" name="sexo" />
+                        <label> Masculino</label>
+
+                        <input type="radio" id="sexotro" value="otro" name="sexo" />
+                        <label> Otro</label>
+                    </div>
+                    <hr />
+                    <div>
+                        <span>Región</span>
+                        <br />
+                        <input type="text" name="region" list="region_susc" />
+                        <datalist id="region_susc">
+                                <option>América del Norte</option>
+                                <option>América Central</option>
+                                <option>América del Sur</option>
+                                <option>Asia</option>
+                                <option>Europa</option>	
+                                <option>Oceanía</option>                                                    			
+				        </datalist>
+                    </div>
+                    <div>
+                        <input id="enviosuscripcion" type="submit" />
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section id="autor">
+            <hr/>
+            <p>El webmaster de este sitio es <a class="juanma" href="mailto:juan.palma@davinci.edu.ar">Juan Manuel Palma</a>, que cursa <abbr title="Diseño Web, Turno Noche, 1B">DWTN1B</abbr> con Germán Rodríguez (que nos <a id="btnthnx">salvó de la <abbr title="Marisa del Mal">MdM</abbr></a>) y este sitio es una <abbr title="Trabajo Práctico">TP</abbr> de entrega para la Escuela Multimedial Da Vinci en el año 2018.</p>
+
+            <div id="modalgerman" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Hola Germán!</h2>
+                    </div>
+                    <div class="modal-body">
+                        <img class="alleluyah" src="img/meme.jpg" alt="Nos has salvado, estamos agradecidos!" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="copyright">
+            <p>© 2018 SONY MUSIC ENTERTAINMENT. ALL RIGHTS RESERVED. | Sitio web diseñado por <img class="jm" src="img/autor.png" alt="Logo Creador"></p>
+        </footer>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('modalgerman');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("btnthnx");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+        </script>
+
+    </main>
+</body>
+
+</html>

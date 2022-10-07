@@ -1,0 +1,607 @@
+@font-face {
+@font-face {
+    font-family: 'Teko', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    background: url(img/escheresque.png) fixed center;
+    background-color: #000;
+    background-attachment: fixed;
+    overflow: auto;
+    width: 1200px;
+    margin: auto;
+
+}
+
+body {
+    background: url(img/dust.png) fixed center;
+}
+
+#home h1 {
+    background: url(img/fondo_h1_2.jpg) no-repeat center;
+    height: 540px;
+    font-size: 120px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: Teko;
+}
+
+h2 {
+    font-family: Permanent Marker;
+    font-size: 44px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-family: Ubuntu;
+    font-size: 20px;
+}
+
+p {
+    font-family: Ubuntu;
+}
+
+iframe {
+    border: none;
+}
+
+span {
+    padding-bottom: 10px;
+}
+
+blockquote{
+    font-family: Ubuntu;
+    font-size: 24px;
+    color: white;
+}
+
+.historia{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.historia > div {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+    padding: 10px;
+  }
+
+#menu {
+    background: rgba(255, 255, 255, 0.4);
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    list-style-type: none;
+    border-top: 2px solid rgba(255, 255, 255, 0);
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    transition: background-color 0.2s ease-out,
+    color 0.2s ease-out;
+}
+
+#menu a {
+    display: inline-block;
+    float: center;
+    width: 100px;
+    text-decoration: none;
+    text-align: right;
+    padding: 3px 5px;
+    font-family: Permanent Marker;
+
+}
+
+#menu li {
+    display: inline;
+    list-style: none;
+}
+
+.botonmenu {
+    display: block;
+    margin: auto;
+    font-family: Ubuntu;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    transition: background-color 0.2s ease-out,
+    color 0.2s ease-out;
+}
+
+.botonmenu:hover,
+.botonmenu:active {
+    color: #2e499a;
+    -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    transition: background-color 0.3s ease-in,
+    color 0.3s ease-in;
+}
+
+#biografia p {
+    text-align: center;
+    color: black;
+    font-family: Ubuntu;
+}
+
+#biografia h2 {
+    text-align: center;
+    color: black;
+}
+
+#biografia h3 {
+    text-align: center;
+    color: black;
+}
+
+#biografia {
+    background: url(img/dust_2.png) fixed center;
+}
+
+#ultimodisco {
+    background: url(img/cover_kissme_magic_fondo.jpg) no-repeat center top;
+    background-attachment: fixed;
+    overflow: auto;
+    border: 1px solid black;
+    background-color: #000;
+    padding: 10px;
+}
+
+#ultimodisco h2 {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#ultimodisco h3 {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#ultimodisco p {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#noticias {
+    background: url(img/escheresqueblanco.png) repeat fixed;
+    padding: 19px;
+}
+
+#noticias h2,
+h3,
+p {
+    text-align: center;
+    color: white;
+}
+
+#tour {
+    background: url(img/tour_back.jpg) repeat fixed;
+    padding: 10px;
+}
+
+#tour h2,
+h3,
+ul {
+    text-align: center;
+    list-style: none;
+    color: white;
+
+}
+
+#tour li {
+    font-family: 'Permanent Marker';
+    color: white;
+}
+
+#suscripcion {
+    15px;
+    color: white;
+    text-align: center;
+
+}
+
+#entradas {
+    15px;
+    color: white;
+    text-align: center;
+
+}
+
+#autor {
+    padding: 10px;
+}
+
+#copyright {
+    background: url(img/congruent_pentagon.png) repeat fixed;
+
+}
+
+#copyright p {
+    color: white;
+    padding: 15px;
+    font-size: 10px;
+    margin-top: 0px;
+
+}
+
+form {
+    padding: 10px;
+    width: 80%;
+    min-width: 500px;
+    margin: 0 auto;
+    font-family: Ubuntu;
+}
+
+form div {
+    margin-bottom: 4px;
+}
+
+form span {
+    width: 130px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+form input,
+select {
+    width: 370px;
+}
+
+form .small input {
+    width: auto;
+}
+
+legend {
+    background: rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 10px;
+}
+
+iframe {
+    margin: auto;
+    display: block;
+}
+
+.boton {
+    display: block;
+    margin: auto;
+    font-family: Ubuntu;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    transition: background-color 0.2s ease-out,
+    color 0.2s ease-out;
+}
+
+.boton:hover,
+.boton:active {
+    background-color: #fff;
+    color: #000;
+    -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    transition: background-color 0.3s ease-in,
+    color 0.3s ease-in;
+}
+
+.juanma {
+    text-decoration: none;
+    color: white;
+}
+
+.juanma:hover,
+.juanma:active {
+    color: red;
+}
+
+.alleluyah {
+    display: block;
+    margin: auto;
+}
+
+#btnthnx:hover,
+#btnthnx:active{
+    color:red;
+}
+
+/* MODAL */
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #2e499a;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    display: block;
+    margin: auto;
+}
+
+/* Add Animation */
+
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+ul {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+.jm{
+    vertical-align: middle;
+    filter: grayscale(100%)
+}
+
+.jm:hover{
+    filter: grayscale(0%)
+}
+
+/* OTRAS SECCIONES */
+
+.bannercorto {
+    background: url(img/fondo_h1_2.jpg) no-repeat center;
+    height: 260px;
+    font-size: 120px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: Teko;
+}
+
+.h1corto {
+    margin-top: 0px;
+    display: none;
+}
+
+/* DISCOGRAFÍA */
+
+
+
+.listadiscos li {
+    display: inline-block;
+    float: center;
+    padding-bottom: 5px;
+}
+
+.otrosbotones {
+    display: block;
+    margin: auto;
+    font-family: Permanent Marker;
+    width: 230px;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    transition: background-color 0.2s ease-out,
+    color 0.2s ease-out;
+}
+
+.otrosbotones:hover,
+.otrosbotones:active {
+    background-color: #fff;
+    color: #2e499a;
+    -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    transition: background-color 0.3s ease-in,
+    color 0.3s ease-in;
+}
+
+#dontkillmagic {
+    background: url('img/donkillmagicfondo.jpg') no-repeat fixed center;
+}
+
+#dontkillmagic h2 {
+    text-align: center;
+    color: black;
+    background-color: rgba(239, 239, 67, 0.4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#primatecolours {
+    background: url('img/primarycoloursfondo.jpg') no-repeat fixed center;
+}
+
+#primatecolours h2 {
+    text-align: center;
+    color: white;
+    background-color: rgba(239, 67, 67, 0.4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#mixedsensations {
+    background: url('img/mixedsensationsfondo.jpg') no-repeat fixed center;
+}
+
+#mixedsensations h2 {
+    text-align: center;
+    color: white;
+    background-color: rgba(222, 171, 92, 0.4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#magicalive {
+    background: url('img/alivefondo.jpg') no-repeat fixed center;
+}
+
+#magicalive h2 {
+    text-align: center;
+    color: white;
+    background-color: rgba(23, 51, 73, 0.4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.discos-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px 5px 30px 5px;
+}
+
+.discos-info {
+    padding: 10px;
+    text-align: left;
+    font-family: Ubuntu;
+    font-size: 16px;
+    color: white;
+}
+
+.discos-info ul li {
+    text-align: left;
+
+}
+
+#menu_discos {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* NOTICIAS */
+
+#noticiastitulo{
+    background: url(img/diagonal_striped_brick.png) fixed center;
+}
+
+#noticiastitulo h2{
+    padding-bottom: 20px;
+}
+
+#kissme {
+    background: url(img/diagonal_striped_brick.png) fixed center;
+}
+
+#dartsindark {
+    background: url(img/fondo.jpg) fixed center;
+}
+
+/* TOUR */
+
+.grillatour{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  }
+.grillatour > div {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: left;
+    padding: 10px;
+    color: white;
+    font-family: Permanent Marker;
+  }

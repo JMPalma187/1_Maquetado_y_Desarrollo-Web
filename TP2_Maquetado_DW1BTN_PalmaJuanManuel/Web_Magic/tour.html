@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Magic! | Bienvenid@!</title>
+    <link rel="StyleSheet" href="normalize.css" type="text/css" />
+    <link rel="StyleSheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+</head>
+
+<body class="cuerpo">
+    <main>
+           <nav id="menu">
+            <ul>
+                <li><a class="botonmenu" href="index.html">Principal</a></li>
+                <li><a class="botonmenu" href="discografia.html">Discografía</a></li>
+                <li><a class="botonmenu" href="informacion.html">Noticias</a></li>
+                <li><a class="botonmenu" href="tour.html">Tour 2018</a></li>
+                <li><a class="botonmenu" href="http://www.facebook.com/ournameismagic" target="_blank">Facebook</a></li>
+                <li><a class="botonmenu" href="http://www.twitter.com/ournameismagic" target="_blank">Twitter</a></li>
+                <li><a class="botonmenu" href="http://www.youtube.com/ournameismagic" target="_blank">YouTube</a></li>
+            </ul>
+        </nav>
+        <header class="bannercorto">
+            <h1 class="h1corto">MAGIC!</h1>
+        </header>
+        <section id="noticiastitulo">
+            <h2>Tour Magic World 2018/9</h2>
+        </section>
+        <section id="tour">
+           <h3>Fechas y Lugares</h3>
+            <div class="grillatour">  
+                <div class="fechas">JUN 23</div><div class="fechas">Red River Exibition Park - Winnipeg, MB</div>
+                <div class="fechas"><a class="otrosbotones" href="#entradas">Comprar Tickets</a></div>
+                <div class="fechas">JUL 07</div>
+                <div class="fechas">Del Crary ParkPeterborough, Canadá</div>
+                <div class="fechas"><a class="otrosbotones" href="#entradas">Comprar Tickets</a></div>
+                <div class="fechas">JUL 14</div>
+                <div class="fechas">XOXO FestAntioch, Canadá</div>
+                <div class="fechas"><a class="otrosbotones" href="#entradas">Comprar Tickets</a></div>
+                <div class="fechas">JUL 27</div>
+                <div class="fechas">3 Acres Park - Waipahu, México</div>
+                <div class="fechas"><a class="otrosbotones" href="#entradas">Comprar Tickets</a></div>
+                <div class="fechas">JUL 28</div>
+                <div class="fechas">Maui Arts and Cultural Center - Kahului, Hawai</div>
+                <div class="fechas"><a class="otrosbotones" href="#entradas">SOLD OUT</a></div>
+                <div class="fechas">AGO 02</div>
+                <div class="fechas">Maui Arts and Cultural Center - Kahului, Hawai</div>
+                <div class="fechas"><a class="otrosbotones" href="#entradas">Comprar Tickets</a></div>
+                <div class="fechas">SEP 21</div>
+                <div class="fechas">Coachella Festival - Indio, <abbr title="California">CA</abbr>, <abbr title="Estados Unidos de América">EUA</abbr></div>
+                <div class="fechas"><a class="otrosbotones" href="#entradas">Comprar Tickets</a></div>
+                <div class="fechas">OCT 12</div>
+                <div class="fechas">Monza Music Festival - Milan, <abbr title="Italia">IT</abbr></div>
+                <div class="fechas"><a class="otrosbotones" href="#entradas">Comprar Tickets</a></div>
+                <div class="fechas">DIC 28</div>
+                <div class="fechas">02 Arena - Londres, <abbr title="Reino Unido">RU</abbr></div>
+                <div class="fechas"><a class="otrosbotones" href="#entradas">Comprar Tickets</a></div>
+                <div class="fechas">FEB 15</div>
+                <div class="fechas">Kaaboo Cayman - West Bay, Cayman Islands</div>
+                <div class="fechas"><a class="otrosbotones" href="#entradas">Comprar Tickets</a></div>
+            </div>
+        </section>
+        <section id="entradas">
+            <h2>Compra de entradas</h2>
+            <h3>¿Querés ir a ver un show de Magic!? ¡Acá podés adquirir las entradas!</h3>
+            <p>Con los datos de abajo, te llegará un mail con el link respectivo para continuar la compra. El formulario sólo reserva el evento y cantidad de tickets.</p>
+            <form method="post" action="http://recursos.grodriguez.com.ar/FORM/">
+                <fieldset>
+                    <legend>Compra de tickets</legend>
+                    <div>
+                        <input type="text" name="nombre" placeholder="Nombre y Apellido" required /> *
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="E-Mail (nombre@casilla.com)" required /> *
+                    </div>
+                    <hr />
+                    <div class="small">
+                        <span>Show</span>
+                        <input type="text" name="localidad" list="magictour" />
+                        <datalist id="magictour">
+                                <option>JUN 23 - Red River Exibition Park, Canadá</option>
+                                <option>JUL 07 - Del Crary ParkPeterborough, Canadá</option>
+                                <option>JUL 14 - XOXO FestAntioch, México</option>
+                                <option>JUL 27 - 3 Acres ParkWaipahu, Haiwai</option>
+                                <option>JUL 28 - SOLD OUT</option>
+                                <option>AGO 02 - Maui Arts and Cultural Center</option>
+                                <option>SEP 21 - Coachella Festival - Indio, CA, EUA</option>
+                                <option>OCT 12 - Monza Music Festival - Milan, IT</option>
+                                <option>DIC 28 - 02 Arena - Londres, UK</option>
+                                <option>FEB 15 - Kaaboo Cayman</option>				
+				        </datalist>
+                        <span>Cantidad de Entradas</span>
+                        <input type="text" name="cantidadtkt" list="cantidad_tkt" />
+                        <datalist id="cantidad_tkt">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>				
+				        </datalist>
+                    </div>
+                    <div>
+                        <input id="enviosuscripcion" type="submit" />
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+         <footer id="copyright">
+             <p>© 2018 SONY MUSIC ENTERTAINMENT. ALL RIGHTS RESERVED. | Sitio web diseñado por <img class="jm" src="img/autor.png" alt="Logo Creador"></p>
+        </footer>
+    </main>
+</body>
+
+</html>

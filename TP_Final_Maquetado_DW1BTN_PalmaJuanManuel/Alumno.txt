@@ -1,0 +1,7 @@
+ALumno: Juan Manuel Palma / 33366025.
+Materia: Maquetado y Desarrollo Web.
+Carrera: Diseño y Programación Web.
+Comisión DW1BTN.
+Año Cursada: 2018.
+Profesor: Germán Rodriguez.
+Fecha de Examen: 17 de diciembre de 2020.

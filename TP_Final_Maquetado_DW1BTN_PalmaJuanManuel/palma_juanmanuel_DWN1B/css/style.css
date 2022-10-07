@@ -1,0 +1,862 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+            src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+            src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+            font-family: 'Montserrat', sans-serif;
+}
+
+/* REGLAS GENERALES*/
+
+body {
+    font-family: 'Montserrat', Helvetica, sans-serif;    
+}
+
+header {
+    background: rgb(60, 62, 113);
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+}
+
+h1 {
+    background: url("../img/logo_celular.png") center center;
+    width: 30vw;    
+    height: calc(85vw * .3725);   
+    font-size: 0;
+    max-width: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h2 {
+    margin-bottom: 1em;
+    font-size: 2.3em;
+}
+
+h3{
+    font-family: 'Montserrat';
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+#banner img {
+    background-image: url('../img/fondo_h1_celu.jpg');
+    height: auto;
+    max-width: 100%;
+}
+
+section {
+    padding: 20px;
+}
+
+.ocultos{
+    font-size: 0px;
+}
+
+#banner-h2 {
+    background-image: none;
+}
+
+#banner-h2 h2{
+    color:rgb(60, 62, 113);
+    text-align: center;
+}
+
+/* Reglas en el INDEX */
+
+#banner{
+    padding:0px;
+}
+
+#Nosotros {
+    background: rgb(60, 62, 113);
+}
+
+#Nosotros h2{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 70px;
+}
+
+#Nosotros h3{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+#Why{    
+    background: rgb(60, 62, 113);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px 5px 30px 5px;
+    background: rgba(60, 62, 113, 0.8);
+}
+
+.skills-info {
+    padding: 10px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 16px;
+    color: white;
+}
+
+.skills-info h3, p {
+    text-align: center;
+}
+
+.skills-info i{
+    font-size: 70px;    
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 40px;
+    color: #fff;
+}
+
+#Media h2{
+    color:rgb(60, 62, 113);
+    text-align: center;
+}
+
+#Media p{
+    color:rgb(60, 62, 113);
+    text-align: center;
+}
+
+.videos {
+    text-align: center;    
+    margin: auto;   
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+.videos iframe, object, embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+
+.clientes-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px 5px 30px 5px;
+    background: #fff;
+}
+
+.clientes-info {
+    padding: 10px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 16px;
+    color: white;
+}
+
+.clientes-info h3 {
+    text-align: center;
+    color: rgb(60, 62, 113);
+}
+
+.clientes-info p {
+    text-align: center;
+    color: rgb(60, 62, 113);
+}
+
+.clientes-info img{  
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+    padding: 40px;
+}
+
+footer p {
+    text-align: center;
+    font-size: .8em;
+    color: white;
+    background: rgb(60, 62, 113);
+    margin: 0;
+    padding-top: .8em;
+    padding-bottom: .8em;
+}
+
+footer p a {
+    text-decoration: none;
+    display: inline-block;    
+    background:  rgb(60, 62, 113);
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
+
+footer p a i{
+    font-size: 14px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* SECCIÓN PORTFOLIO*/
+
+#menu_portfolio{
+    background: rgb(60, 62, 113);
+}
+
+#menu_portfolio h2{
+    display: none;
+}
+
+.listadoportfolio li {
+    list-style: none;
+    padding: 5px;
+}
+
+.botoonesportfolio {
+    display: block;
+    margin: auto;
+    font-family: 'Montserrat';
+    width: 230px;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    transition: background-color 0.2s ease-out,
+    color 0.2s ease-out;
+}
+
+.botoonesportfolio:hover,
+.botoonesportfolio:active {
+    background-color: #fff;
+    color: rgb(60, 62, 113);
+    -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    transition: background-color 0.3s ease-in,
+    color 0.3s ease-in;
+}
+
+.portfolio-container {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 5px 5px 30px 5px;
+        background: #fff;
+    }
+
+.portfolio-info img{
+    display: none;
+}
+
+.portfolio-info-text {
+    background: rgb(60, 62, 113);
+}        
+
+.portfolio-info-text li{
+        list-style: none;
+    }
+
+.portfolio-info-text h3{
+        color: white;
+        padding: 30px;
+        font-display: center;
+    }
+
+.portfolio-info-text p{
+        color: white;
+        padding: 30px;
+        font-display: center;
+    }
+
+.portfolio-info-text a{
+        color: white;
+    }   
+
+.botoonesvolver {
+        display: block;
+        margin: auto;
+        font-family: 'Montserrat';
+        width: 230px;
+        padding: 8px;
+        color: #FFF;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+        transition: background-color 0.2s ease-out,
+        color 0.2s ease-out;
+    }
+
+.botoonesvolver:hover,
+.botoonesvolver:active {
+        background-color: #fff;
+        color: rgb(60, 62, 113);
+        -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+        transition: background-color 0.3s ease-in,
+         color 0.3s ease-in;
+}
+
+/* SECCIÓN ACADÉMICO*/
+
+.davinci{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: auto;
+    padding: 5px 5px 30px 5px;
+    background: rgba(60, 62, 113, 0.8);
+}
+
+.davinci img{
+    display: none;
+}
+
+.davinci a{
+    color: white;
+}
+
+#diseniografico{
+    background: rgb(60, 62, 113);
+}
+
+#diseniografico h3{
+    color: #fff;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;  
+}
+
+#diseniografico p{
+    color: white;
+    padding: 20px;
+    text-align: center;    
+}
+
+#interfaces{
+    background: rgb(60, 62, 113);
+}
+
+#interfaces h3{
+    color: #fff;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+#interfaces p{
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#curso3d {
+    background: rgb(60, 62, 113);
+}
+
+#curso3d h3{
+    color: #fff;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+#curso3d p{
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* SECCIÓN CONTACTO*/
+#Contacto {
+    background: #fff;    
+}
+
+#Contacto div input {   
+        width: 70%;
+        margin: 15px auto;            
+        padding: 5px;
+}
+
+label {
+            display: inline-block;
+            vertical-align: middle;
+            width: 150px;
+        }
+
+textarea {
+            width: 70%;
+            height: 10em;
+            }
+            
+
+input[type="submit"] {
+            background:rgb(60, 62, 113);
+            color: white;
+            padding: 20px;
+            width: 40%;
+            border-radius: 3px;
+        }
+input[type="submit"]:hover {
+            background: white;
+            color: rgb(60, 62, 113);
+            border-color: rgb(60, 62, 113);
+            padding: 20px;
+            width: 40%;
+            border-radius: 3px;
+        }
+        
+        form > div:last-child {
+            text-align: right;
+            padding-right: 5%;
+        }
+
+/* SECCIÓN CONTACTO_EXITOSO*/
+
+#checkOK {
+    background: rgb(60, 62, 113);
+    color: white;
+    text-align: center;
+}
+
+#checkOK i{
+    font-size: 220px;
+    padding: 50px;
+}
+
+#checkOK h3{
+    font-size: 50px;
+    padding: 30px;
+}
+
+#checkOK p{
+    font-size: 30px;
+    padding: 30px;
+}
+
+#checkOK button{
+            background:rgb(60, 62, 113);
+            color: white;
+            padding: 20px;
+            width: 40%;
+            border-radius: 3px;
+}
+
+#checkOK button:hover{
+    border-color: white;
+    padding: 20px;
+    width: 40%;
+    border-radius: 3px;
+}
+
+#checkOK a{
+    text-decoration: none;
+    color: white;
+}
+
+#checkOK a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* SECCIÓN SOBRE MÍ*/
+
+#sobre-mi{
+    background: rgb(60, 62, 113);
+
+}
+
+#sobre-mi h2{
+    display: none;
+}
+
+.quiensoy-container {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: auto;
+    padding: 5px 5px 30px 5px;
+    background: rgba(60, 62, 113, 0.8);
+}
+
+.avatarcircular{
+    border-radius: 50%;
+    width: 50%;
+    vertical-align: center;
+    display: inline-block;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quiensoy-info {
+    padding: 10px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 16px;
+    color: white;
+}
+
+.quiensoy-info h3, p {
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.quiensoy-info h3{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.quiensoy-info ul li{
+    list-style: none;
+}
+
+.cvinfo h3{
+    font-size: 20px;
+}
+
+.cvinfo p{
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 1181px) {
+
+    header {
+        background:  rgb(60, 62, 113);
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #menu > a {
+        list-style: none;
+        text-indent: -100px;
+        overflow: hidden;
+        margin-top: .75em;
+        background: url("../img/menu.png") no-repeat center center;
+        background-size: cover;
+        height: 2.5em;
+        width: 2.5em;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #cerrar {
+        display: none;
+    }
+
+    #abrir:focus ~ #barra {
+        left: 0;
+    }
+
+    #abrir:focus ~ #cerrar {
+        display: block;
+    }
+    h1 {          
+        background: url("../img/logo_celular.png") no-repeat center ;
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        max-height: 224px;
+    }
+}
+
+#barra {
+    width: 100%;
+    height: calc(100vh - 4em);
+    position: absolute;
+    top: 4em;
+    left: -100%;
+    background:  rgb(60, 62, 113);
+    transition: left .5s ease;
+}
+
+#barra li {
+    list-style: none;
+    margin: 1em;
+    width: 90%;
+    display: inline-block;
+}
+
+#barra li a {
+    text-decoration: none;
+    display: block;
+    background:  rgb(60, 62, 113);
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
+
+@media screen and (min-width: 577px) {
+    h1 {              
+        background: url("../img/logo_tablet.png") no-repeat center center;
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        max-height: 224px;
+        text-align: center;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1182px) {
+
+    #banner-h2 {
+        background-image: url('../img/banner.jpg');
+        height: auto;
+        max-width: 1200px;
+    }
+
+    
+    #banner-h2 h2{
+        text-align: left;
+    }
+
+    #abrir, #cerrar {
+        display: none;
+    }
+
+    header {
+        height: auto;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    section {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    h1 {
+        display: inline-block;
+        vertical-align: left;
+        background: url("../img/logo.png") no-repeat center center;
+        background-size: cover;        
+        max-width: 20%;
+        max-height: auto;
+    }
+
+    #menu {
+        display: inline-block;
+        width: 70%;
+        vertical-align: middle;
+    }
+
+    #barra {
+        position: static;
+        height: auto;
+        text-align: right;
+        background: none;
+    }
+
+    #barra li {
+        width: 130px;
+        margin: 0 1em;
+        text-align: center;
+    }
+    
+    #Why {
+        max-width: 1200px;        
+        background: rgb(60, 62, 113)
+    }
+
+    #Why h2{
+        font-size: 0px;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 5px 5px 30px 5px;
+    }
+    
+    .skills-info {
+        padding: 10px;
+        text-align: left;
+        font-family: Ubuntu;
+        font-size: 16px;
+        color: white;
+    }
+    
+    .skills-info ul li {
+        text-align: left;
+    
+    }
+    
+    .skills-info i{
+        font-size: 70px;    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Media p{        
+        text-align: left;
+    }
+
+    #Clientes{
+        background: #fff;
+    }
+
+    .clientes-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 5px 5px 30px 5px;
+    }
+    
+    .clientes-info {
+        padding: 10px;
+        text-align: center;
+        font-family: Ubuntu;
+        font-size: 16px;
+        color: white;
+    }
+    
+    .clientes-info ul li {
+        text-align: center;    
+    }
+    
+    .clientes-info i{
+        font-size: 70px;    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+    
+    footer {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    /* SECCIÓN PORTOFLIO DESKTOP*/    
+
+    .listadoportfolio li {
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+    
+    .botoonesportfolio {
+        display: block;
+        margin: auto;
+        font-family: 'Montserrat';
+        width: 230px;
+        padding: 8px;
+        color: #fff;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+        transition: background-color 0.2s ease-out,
+        color 0.2s ease-out;
+    }
+    
+    .botoonesportfolio:hover,
+    .botoonesportfolio:active {
+        background-color: #fff;
+        color: rgb(60, 62, 113);
+        -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+        transition: background-color 0.3s ease-in,
+        color 0.3s ease-in;
+    }
+
+    .portfolio-container {
+        grid-template-columns: auto auto;
+    }
+    
+    .portfolio-info-text h3{
+        color: white;
+        padding: 30px;
+        font-size: 40px;
+        text-align: right;
+    }
+
+    .portfolio-info-text p{
+        color: white;
+        padding: 30px;
+        text-align: right;
+    }
+
+    #videogames h2,
+    #webdesign h2,
+    #graphic h2,
+    #rendering h2{
+        display: none;
+    }
+
+    .portfolio-info img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    /* SECCIÓN ACADÉMICO DESKTOP*/
+
+    .davinci{
+        grid-template-columns: auto auto;
+    }
+
+    .davinci img{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+      
+    #diseniografico h3{
+        text-align: left;  
+    }
+    
+    #diseniografico p{
+        text-align: left;    
+    }
+    
+    #interfaces h3{
+        text-align: left;
+    }
+    
+    #interfaces p{
+        text-align: left;
+    }
+    
+    #curso3d h3{
+        text-align: left;
+    }
+    
+    #curso3d p{  
+        text-align: left;
+    }
+
+    /* SOBRE MI DESKTOP*/
+    .quiensoy-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5px 5px 30px 5px;
+        background: rgba(60, 62, 113, 0.8);
+    }
+}
